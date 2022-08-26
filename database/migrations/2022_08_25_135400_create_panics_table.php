@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('longitude');
             $table->string('latitude'); 
             $table->string('panic_type');
-            $table->string('external_panic_id')->nullable();
+            $table->integer('external_panic_id')->nullable();
             $table->mediumtext('details');
             $table->json('created_by')->nullable();
             $table->timestamps();

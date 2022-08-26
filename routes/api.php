@@ -20,23 +20,14 @@ use App\Http\Controllers\Api\v1\PanicController;
 
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
-
-// Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controller\Api\v1'], function (){
-//     Route::apiResource('panic', PanicController::class);
-//     Route::apiResource('respone', ResponseController::class);
-
-// })->middleware('auth:api');
 
 Route::post('/login', [UserAuthController::class, 'login']);
-
 Route::post('/panic/create', [PanicController::class, 'create'])->middleware('auth:api');
 Route::post('/panic/cancel', [PanicController::class, 'cancel'])->middleware('auth:api');
 Route::get('/panic/history', [PanicController::class, 'index'])->middleware('auth:api');
 
-
-// Route::post('/login', 'Api\v1\Auth\UserAuthController@login');
 
