@@ -41,6 +41,6 @@ class Mail implements ShouldQueue
     {
 
         $message = $this->system_response;
-        mail("ashtonpieterse.ap@gmail.com","Api Failure",$message);
+        mail("danny@fusebox.co.za","Api Failure",$message);
     }
 }

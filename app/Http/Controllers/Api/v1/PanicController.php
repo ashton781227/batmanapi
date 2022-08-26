@@ -95,7 +95,7 @@ class PanicController extends Controller
         );
 
         // Queue for server to server Api calls
-        PanicJob::dispatch($user_id, $data, $system_response, $wayne_variables, $panic_id  )->delay(now()->addMinutes(1));
+        CreatePanic::dispatch($user_id, $data, $system_response, $wayne_variables, $panic_id  )->delay(now()->addMinutes(1));
         
         
         
