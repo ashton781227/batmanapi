@@ -73,8 +73,6 @@ class PanicController extends Controller
             $panic->panic_type = $data['panic_type'];
             $panic->details = $data['details'];
             $panic->created_by = json_encode(['id'=>$user->id,'name'=>$user->name,'email'=>$user->email]);
-            // $panic->variables = json_encode($data);
-            // $panic->response = null;
             $panic->save();
             $panic_id = $panic->id;
             
