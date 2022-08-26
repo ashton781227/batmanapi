@@ -4,7 +4,7 @@
 
 ## Ashton Pieterse Batman API
 
-A fun project completed for the DarkNight Himself!:
+A fun project completed for the DarkNight Himself!
 
 When implimenting the project remember to run:
 ```
@@ -20,10 +20,16 @@ php artisan passport:install
 
 The API endpointd are as follows:
 
+```
 /api/login
+
 /api/panic/create
+
 /api/panic/cancel
+
 /api/panic/history
+
+```
 
 ## Log in details
 
