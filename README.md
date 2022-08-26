@@ -18,7 +18,7 @@ php artisan passport:install
 
 ## The API Endpoints
 
-The API endpointd are as follows:
+The API endpoints are as follows:
 
 ```
 /api/login
